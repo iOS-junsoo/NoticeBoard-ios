@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailPostingTableViewCell" rowHeight="156" id="KGk-i7-Jjw" customClass="DetailPostingTableViewCell" customModule="NoticeBoard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="474" height="155"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="474" height="155"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Ods-Uc-Yxq">
+                        <rect key="frame" x="20" y="8" width="50" height="48.666666666666671"/>
+                        <color key="tintColor" systemColor="systemGrayColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="Owe-hm-idn"/>
+                            <constraint firstAttribute="height" constant="50" id="v4U-BA-kGU"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="탐스 2층 화장실???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yO1-7a-8QD">
+                        <rect key="frame" x="20" y="80" width="434" height="24"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ㅁㅁㅁㅁㅁㅁ" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYz-C0-wqb">
+                        <rect key="frame" x="20" y="118.99999999999999" width="434" height="19.333333333333329"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" systemColor="systemGray3Color"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="찡긋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQF-fa-fZ5">
+                        <rect key="frame" x="78" y="20" width="200" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="LlN-OA-H5M"/>
+                            <constraint firstAttribute="width" constant="200" id="Sn2-Aj-giB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="yO1-7a-8QD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="1Gp-y8-5bv"/>
+                    <constraint firstItem="WQF-fa-fZ5" firstAttribute="leading" secondItem="Ods-Uc-Yxq" secondAttribute="trailing" constant="8" symbolic="YES" id="2gm-qi-Rdk"/>
+                    <constraint firstAttribute="trailing" secondItem="yO1-7a-8QD" secondAttribute="trailing" constant="20" symbolic="YES" id="FDF-u1-ITR"/>
+                    <constraint firstAttribute="trailing" secondItem="gYz-C0-wqb" secondAttribute="trailing" constant="20" symbolic="YES" id="L6R-F7-kax"/>
+                    <constraint firstItem="Ods-Uc-Yxq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="aML-95-gRD"/>
+                    <constraint firstItem="yO1-7a-8QD" firstAttribute="top" secondItem="Ods-Uc-Yxq" secondAttribute="bottom" constant="23" id="ho6-y0-XJG"/>
+                    <constraint firstItem="Ods-Uc-Yxq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="pcf-Rp-JxP"/>
+                    <constraint firstItem="gYz-C0-wqb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="s4y-f9-5K3"/>
+                    <constraint firstItem="WQF-fa-fZ5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="sg0-24-3i5"/>
+                    <constraint firstItem="gYz-C0-wqb" firstAttribute="top" secondItem="yO1-7a-8QD" secondAttribute="bottom" constant="15" id="wLy-k5-5X6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="author" destination="WQF-fa-fZ5" id="1Ku-ld-FUG"/>
+                <outlet property="content" destination="gYz-C0-wqb" id="4Zy-7j-kZX"/>
+                <outlet property="title" destination="yO1-7a-8QD" id="34H-og-Ekn"/>
+            </connections>
+            <point key="canvasLocation" x="215.26717557251908" y="59.154929577464792"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="person.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="systemGray3Color">
+            <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
